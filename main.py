@@ -49,23 +49,25 @@ def ipfn(p, f, n):
 
 
 def fain(a, i, n):
-    pass
+    f = a( (((1+i)**n)-1)/i)
+    return f
 
 
 def afin(f, i, n):
-    pass
-
+    a = i/(((1+i)**n)-1)
+    return a
 
 def apin(p, i, n):
-    pass
-
+    a = p((i((1+i)**n))/(((1+i)**n)-1))
+    return a
 
 def agin(g, i, n):
-    pass
-
+    a = g((1/i)-(n/(((1+i)**n)-1)))
+    return a
 
 def pgin(g, i, n):
-    pass
+    p = g((((1+i)**n)-i*n-1)/(i*i*((1+i)**n)))
+    return p
 
 inp = input("Enter necessary function.\nFunctions available:"
             "\nIo, (P/A,i,n), (P/A,g,i,n), (P/F,i,n), (F/P,i,n).\n")
